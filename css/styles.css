@@ -472,6 +472,17 @@ h1, h2, h3 {
     color: var(--accent);
 }
 
+.project-card__note {
+    margin-top: var(--space-sm);
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.project-card__note i {
+    margin-right: 4px;
+}
+
 /* ---------- Section 3.5 — Lead-Gen / Contact ---------- */
 .contact {
     text-align: center;
