@@ -6,20 +6,22 @@
 
     <!-- SEO Meta Tags (Section 4.2) -->
     <title>Allwyn Thomas | Software Engineer — NJ/NY</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Allwyn Thomas — full-stack software engineer based in New Jersey. NJIT Honors College, 3.95 GPA. Specializing in web development, machine learning, and real-time collaborative systems. Open to opportunities in New York and NJ.">
+    <meta name="keywords" content="software engineer, full-stack developer, New Jersey, New York, NYC, NJ, NJIT, Python, TypeScript, Node.js, React, machine learning, web developer, real-time, collaborative, AWS">
 
     <!-- Open Graph / LinkedIn Preview (Section 4.2) -->
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
+    <meta property="og:title" content="Allwyn Thomas | Software Engineer — NJ/NY">
+    <meta property="og:description" content="Full-stack software engineer out of NJIT Honors (3.95 GPA) who builds real things — from AI-powered games to real-time collaborative tools — and ships them.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://allwynthomas.github.io/">
 
     <!-- Google Fonts (Section 2 — Typography) -->
-    <!-- Font link will go here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome (Section 2 — Iconography) -->
-    <!-- Icon library link will go here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Stylesheet (Section 2 — CSS3) -->
     <link rel="stylesheet" href="css/styles.css">
@@ -27,61 +29,221 @@
 <body>
 
     <!-- ========== NAVIGATION ========== -->
-    <header>
-        <nav>
-            <!-- Logo/Name -->
-            <!-- Nav links: About, Skills, Projects, Contact -->
-            <!-- Mobile hamburger toggle (Section 4.1) -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav__logo">AT<span class="accent">.</span></a>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
 
     <main>
 
         <!-- ========== SECTION 3.1 — HERO ========== -->
-        <section id="hero">
-            <!-- Full name: Allwyn Thomas -->
-            <!-- Title: Software Engineer -->
-            <!-- Tagline -->
-            <!-- Primary CTAs: "View My GitHub Contributions" + "Download Resume" -->
-            <!-- Secondary: LinkedIn link -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <p class="hero__greeting fade-up">Hi, my name is</p>
+                <h1 class="hero__name fade-up">Allwyn Thomas<span class="accent">.</span></h1>
+                <h2 class="hero__title fade-up">Software Engineer</h2>
+                <p class="hero__tagline fade-up">I build full-stack web applications, machine learning systems, and real-time collaborative tools. Based in NJ, open to NYC metro opportunities.</p>
+                <div class="hero__ctas fade-up">
+                    <a href="https://github.com/AllwynThomas" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                        <i class="fab fa-github"></i> View My GitHub Contributions
+                    </a>
+                    <a href="assets/resume/Allwyn_Thomas_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+                        <i class="fas fa-file-alt"></i> Download Resume
+                    </a>
+                </div>
+            </div>
         </section>
 
         <!-- ========== SECTION 3.2 — ABOUT ========== -->
-        <section id="about">
-            <!-- NJIT CS major, IT minor, Honors College, 3.95 GPA -->
-            <!-- 2–3 sentence bio -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section__title reveal">About Me</h2>
+                <div class="about__content reveal">
+                    <p>I'm a <strong>Computer Science</strong> major with an <strong>Information Technology</strong> minor at <strong>NJIT's Albert Dorman Honors College</strong>, holding a <strong>3.95 GPA</strong>. My coursework spans web development, data structures &amp; algorithms, machine learning, artificial intelligence, and databases.</p>
+                    <p>I'm driven by building software that solves real problems — whether that's training neural networks to play Pictionary, engineering real-time collaborative whiteboards deployed on AWS, or designing secure e-commerce platforms from the ground up. I write clean code, ship working products, and thrive in team environments.</p>
+                </div>
+            </div>
         </section>
 
         <!-- ========== SECTION 3.3 — SKILLS ========== -->
-        <section id="skills">
-            <!-- Category: Languages -->
-            <!-- Category: Frameworks & Libraries -->
-            <!-- Category: Databases -->
-            <!-- Category: Tools & Platforms -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section__title reveal">Technical Skills</h2>
+                <div class="skills__grid">
+                    <div class="skills__category reveal">
+                        <h3 class="skills__heading"><i class="fas fa-code"></i> Languages</h3>
+                        <div class="skills__tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">C</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">PHP</span>
+                        </div>
+                    </div>
+                    <div class="skills__category reveal">
+                        <h3 class="skills__heading"><i class="fas fa-layer-group"></i> Frameworks &amp; Libraries</h3>
+                        <div class="skills__tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Pygame</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Keras</span>
+                            <span class="tag">PyTorch</span>
+                        </div>
+                    </div>
+                    <div class="skills__category reveal">
+                        <h3 class="skills__heading"><i class="fas fa-database"></i> Databases</h3>
+                        <div class="skills__tags">
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">MariaDB</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Oracle SQL</span>
+                        </div>
+                    </div>
+                    <div class="skills__category reveal">
+                        <h3 class="skills__heading"><i class="fas fa-tools"></i> Tools &amp; Platforms</h3>
+                        <div class="skills__tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">GitHub Actions (CI/CD)</span>
+                            <span class="tag">AWS (EC2)</span>
+                            <span class="tag">WebSockets</span>
+                            <span class="tag">JWT Auth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- ========== SECTION 3.4 — CASE STUDIES (PROJECTS) ========== -->
-        <section id="projects">
-            <!-- Project Card 1: Covey.Town Interactive Whiteboard (Headliner) -->
-            <!-- Project Card 2: Generative AI Pictionary -->
-            <!-- Project Card 3: Jewelry Store E-Commerce -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section__title reveal">Projects</h2>
+                <div class="projects__grid">
+
+                    <!-- Project 1: Covey.Town — Headliner -->
+                    <article class="project-card project-card--featured reveal">
+                        <div class="project-card__label">Featured Project</div>
+                        <h3 class="project-card__title">Covey.Town Interactive Whiteboard</h3>
+                        <div class="project-card__body">
+                            <p><strong>Problem:</strong> A 2D virtual meeting platform needed collaborative drawing capabilities for its users.</p>
+                            <p><strong>Solution:</strong> Worked with a team to implement a real-time collaborative whiteboard using Tldraw for the drawing UI, WebSockets for live synchronization across clients, and SQLite for persistent storage. Integrated into the existing Covey.Town codebase.</p>
+                            <p><strong>Result:</strong> Deployed to AWS EC2 — users could collaboratively draw in real time and return later to find their work saved.</p>
+                        </div>
+                        <div class="project-card__tags">
+                            <span class="tag tag--sm">TypeScript</span>
+                            <span class="tag tag--sm">Node.js</span>
+                            <span class="tag tag--sm">React</span>
+                            <span class="tag tag--sm">SQLite</span>
+                            <span class="tag tag--sm">WebSockets</span>
+                            <span class="tag tag--sm">Tldraw</span>
+                            <span class="tag tag--sm">GitHub Actions (CI/CD)</span>
+                            <span class="tag tag--sm">AWS (EC2)</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="https://github.com/AllwynThomas/covey.town-interactive-whiteboard" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://coveytown.duckdns.org/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Generative AI Pictionary -->
+                    <article class="project-card reveal">
+                        <h3 class="project-card__title">Generative AI Pictionary</h3>
+                        <div class="project-card__body">
+                            <p><strong>Problem:</strong> Build an application that meaningfully leverages generative AI.</p>
+                            <p><strong>Solution:</strong> Created a Pictionary-style drawing and guessing game where a player competes against an AI opponent. Trained CNN models for drawing recognition and GAN models for AI drawing generation using Google's Quick Draw dataset.</p>
+                            <p><strong>Result:</strong> An AI opponent that can both recognize player drawings and generate its own — all powered by custom-trained neural networks.</p>
+                        </div>
+                        <div class="project-card__tags">
+                            <span class="tag tag--sm">Python</span>
+                            <span class="tag tag--sm">Pygame</span>
+                            <span class="tag tag--sm">TensorFlow</span>
+                            <span class="tag tag--sm">Keras</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="https://github.com/AllwynThomas/Gen-AI-Pictionary" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Jewelry Store E-Commerce -->
+                    <article class="project-card reveal">
+                        <h3 class="project-card__title">Jewelry Store E-Commerce</h3>
+                        <div class="project-card__body">
+                            <p><strong>Problem:</strong> Design and build a complete e-commerce platform with authentication and role-based access control.</p>
+                            <p><strong>Solution:</strong> Built a full-stack jewelry store website with JWT authentication, separate user and admin roles, order management workflows, and a MariaDB-backed product catalog.</p>
+                            <p><strong>Result:</strong> A fully functional e-commerce experience with secure authentication, role-based dashboards, and database-driven inventory management.</p>
+                        </div>
+                        <div class="project-card__tags">
+                            <span class="tag tag--sm">HTML</span>
+                            <span class="tag tag--sm">CSS</span>
+                            <span class="tag tag--sm">PHP</span>
+                            <span class="tag tag--sm">JavaScript</span>
+                            <span class="tag tag--sm">MariaDB</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
         </section>
 
         <!-- ========== SECTION 3.5 — LEAD-GEN / CONTACT ========== -->
-        <section id="contact">
-            <!-- Heading: invitation framing -->
-            <!-- Email: aet@njit.edu -->
-            <!-- LinkedIn: linkedin.com/in/allwyn-thomas -->
-            <!-- GitHub: github.com/AllwynThomas -->
-            <!-- Resume: PDF download link -->
-            <!-- Repeated CTAs (Section 4.3) -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section__title reveal">Let's Build Something Together</h2>
+                <p class="contact__subtitle reveal">Looking for a software engineer in the NY/NJ area? I'd love to hear from you.</p>
+                <div class="contact__links reveal">
+                    <a href="mailto:aet@njit.edu" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>aet@njit.edu</span>
+                    </a>
+                    <a href="https://linkedin.com/in/allwyn-thomas" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/AllwynThomas" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="assets/resume/Allwyn_Thomas_Resume.pdf" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Resume</span>
+                    </a>
+                </div>
+                <div class="contact__ctas reveal">
+                    <a href="https://github.com/AllwynThomas" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                        <i class="fab fa-github"></i> View My GitHub Contributions
+                    </a>
+                    <a href="assets/resume/Allwyn_Thomas_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+                        <i class="fas fa-file-alt"></i> Download Resume
+                    </a>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <!-- ========== FOOTER ========== -->
-    <footer>
-        <!-- Copyright / minimal footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Allwyn Thomas. Built with HTML, CSS &amp; JavaScript.</p>
+        </div>
     </footer>
 
     <!-- JavaScript (Section 2 — vanilla ES6+) -->
