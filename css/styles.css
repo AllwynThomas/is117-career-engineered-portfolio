@@ -257,6 +257,18 @@ h1, h2, h3 {
     padding-top: var(--nav-height);
 }
 
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2xl);
+}
+
+.hero__content {
+    flex: 1;
+    min-width: 0;
+}
+
 .hero__greeting {
     color: var(--accent);
     font-size: var(--font-size-base);
@@ -298,11 +310,38 @@ h1, h2, h3 {
     animation: fadeInUp 0.6s ease forwards;
 }
 
-.hero .fade-up:nth-child(1) { animation-delay: 0.1s; }
-.hero .fade-up:nth-child(2) { animation-delay: 0.2s; }
-.hero .fade-up:nth-child(3) { animation-delay: 0.3s; }
-.hero .fade-up:nth-child(4) { animation-delay: 0.4s; }
-.hero .fade-up:nth-child(5) { animation-delay: 0.5s; }
+.hero__content .fade-up:nth-child(1) { animation-delay: 0.1s; }
+.hero__content .fade-up:nth-child(2) { animation-delay: 0.2s; }
+.hero__content .fade-up:nth-child(3) { animation-delay: 0.3s; }
+.hero__content .fade-up:nth-child(4) { animation-delay: 0.4s; }
+.hero__content .fade-up:nth-child(5) { animation-delay: 0.5s; }
+.hero__photo.fade-up                  { animation-delay: 0.35s; }
+
+/* Hero photo */
+.hero__photo {
+    flex-shrink: 0;
+}
+
+.hero__photo-img {
+    display: block;
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: var(--radius-lg);
+    border: 3px solid var(--accent);
+    box-shadow:
+        0 0 0 8px rgba(59, 130, 246, 0.08),
+        0 24px 64px rgba(0, 0, 0, 0.55);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.hero__photo-img:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 0 0 8px rgba(59, 130, 246, 0.18),
+        0 32px 80px rgba(0, 0, 0, 0.65);
+}
 
 @keyframes fadeInUp {
     to {
@@ -622,6 +661,29 @@ h1, h2, h3 {
     transform: translateY(0);
 }
 
+/* ---------- Responsive — Mobile (hero stacks) ---------- */
+@media (max-width: 767px) {
+    .hero__container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: var(--space-xl);
+    }
+
+    .hero__photo-img {
+        width: 180px;
+        height: 220px;
+    }
+
+    .hero__tagline {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero__ctas {
+        justify-content: center;
+    }
+}
+
 /* ---------- Responsive — Tablet 768px+ (Section 4.1) ---------- */
 @media (min-width: 768px) {
     .hero__name {
@@ -653,6 +715,11 @@ h1, h2, h3 {
 
     .hero__tagline {
         font-size: var(--font-size-xl);
+    }
+
+    .hero__photo-img {
+        width: 300px;
+        height: 370px;
     }
 
     .skills__grid {
