@@ -64,3 +64,23 @@ const activateNavLink = (): void => {
 };
 
 window.addEventListener('scroll', activateNavLink, { passive: true });
+
+// ---------- Dark / Light Mode Toggle ----------
+const themeToggle = document.getElementById('theme-toggle') as HTMLButtonElement;
+const themeIcon   = document.getElementById('theme-icon')   as HTMLElement;
+
+const applyTheme = (theme: 'dark' | 'light'): void => {
+  document.body.classList.toggle('light-mode', theme === 'light');
+  themeIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+  themeToggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+};
+
+const raw = localStorage.getItem('theme');
+const savedTheme: 'dark' | 'light' = raw === 'light' ? 'light' : 'dark';
+applyTheme(savedTheme);
+
+themeToggle.addEventListener('click', (): void => {
+  const next: 'dark' | 'light' = document.body.classList.contains('light-mode') ? 'dark' : 'light';
+  localStorage.setItem('theme', next);
+  applyTheme(next);
+});
