@@ -392,6 +392,7 @@ h1, h2, h3 {
     border-radius: var(--radius-lg);
     padding: var(--space-lg);
     transition: transform var(--transition), box-shadow var(--transition);
+    overflow: hidden;
 }
 
 .project-card:hover {
@@ -481,6 +482,17 @@ h1, h2, h3 {
 
 .project-card__note i {
     margin-right: 4px;
+}
+
+/* --- Project Card Screenshot --- */
+.project-card__screenshot {
+    width: calc(100% + 2 * var(--space-lg));
+    margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-lg)) var(--space-md);
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    display: block;
+    border-bottom: 1px solid var(--border);
 }
 
 /* ---------- Section 3.5 — Lead-Gen / Contact ---------- */
