@@ -390,9 +390,13 @@ h1, h2, h3 {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    padding: var(--space-lg);
+    padding: 0;
     transition: transform var(--transition), box-shadow var(--transition);
     overflow: hidden;
+}
+
+.project-card__content {
+    padding: var(--space-lg);
 }
 
 .project-card:hover {
@@ -486,12 +490,10 @@ h1, h2, h3 {
 
 /* --- Project Card Screenshot --- */
 .project-card__screenshot {
-    width: calc(100% + 2 * var(--space-lg));
-    margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-lg)) var(--space-md);
+    display: block;
+    width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-    display: block;
     border-bottom: 1px solid var(--border);
 }
 

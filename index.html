@@ -100,6 +100,8 @@
                         <div class="skills__tags">
                             <span class="tag">Node.js</span>
                             <span class="tag">React</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Tailwind CSS</span>
                             <span class="tag">Pygame</span>
                             <span class="tag">TensorFlow</span>
                             <span class="tag">Keras</span>
@@ -120,9 +122,13 @@
                         <div class="skills__tags">
                             <span class="tag">Git</span>
                             <span class="tag">GitHub Actions (CI/CD)</span>
+                            <span class="tag">GitHub Pages</span>
                             <span class="tag">AWS (EC2)</span>
                             <span class="tag">WebSockets</span>
                             <span class="tag">JWT Auth</span>
+                            <span class="tag">Vitest</span>
+                            <span class="tag">Playwright</span>
+                            <span class="tag">Lighthouse CI</span>
                         </div>
                     </div>
                 </div>
@@ -135,95 +141,112 @@
                 <h2 class="section__title reveal">Projects</h2>
                 <div class="projects__grid">
 
-                    <!-- Project 1: Covey.Town — Headliner -->
+                    <!-- Project 1: Nuclear Energy Digital Museum — Headliner -->
                     <article class="project-card project-card--featured reveal">
                         <img
-                            src="assets/images/projects/coveytown-whiteboard.png"
-                            alt="Screenshot of the Covey.Town collaborative whiteboard showing multiple users drawing in real time"
+                            src="assets/images/projects/digital-museum.png"
+                            alt="Screenshot of the Nuclear Energy Digital Museum's home page"
                             class="project-card__screenshot"
                             width="1200"
                             height="630"
                             loading="lazy"
                         >
-                        <div class="project-card__label">Featured Project</div>
-                        <h3 class="project-card__title">Covey.Town Interactive Whiteboard</h3>
-                        <div class="project-card__body">
-                            <p><strong>Problem:</strong> A 2D virtual meeting platform needed collaborative drawing capabilities for its users.</p>
-                            <p><strong>Solution:</strong> Worked with a team to implement a real-time collaborative whiteboard using Tldraw for the drawing UI, WebSockets for live synchronization across clients, and SQLite for persistent storage. Integrated into the existing Covey.Town codebase.</p>
-                            <p><strong>Result:</strong> Deployed to AWS EC2 — users could collaboratively draw in real time and return later to find their work saved.</p>
+                        <div class="project-card__content">
+                            <div class="project-card__label">Featured Project</div>
+                            <h3 class="project-card__title">Nuclear Energy Digital Museum</h3>
+                            <div class="project-card__body">
+                                <p><strong>Problem:</strong> Nuclear energy generates roughly 20% of U.S. electricity and holds the strongest comparative safety record of any major energy source, yet public understanding remains shallow and distorted by decades of misrepresentation — leaving visitors unable to evaluate safety, waste, or demand arguments with evidence.</p>
+                                <p><strong>Solution:</strong> Built a digital museum exhibit that walks visitors through the full nuclear energy story: the reactor process, comparative safety and emissions data, energy density visualization, the fuel cycle, and the connection to rising AI data center demand — all organized around a historical timeline with navigable detail pages.</p>
+                                <p><strong>Result:</strong> A fully accessible, performance-audited, GitHub Pages-deployed exhibit that teaches the reactor process, reframes safety through data, and contextualizes nuclear's role in future electricity demand, verified against acceptance criteria with Playwright browser tests and Lighthouse CI scoring.</p>
+                            </div>
+                            <div class="project-card__tags">
+                                <span class="tag tag--sm">Next.js</span>
+                                <span class="tag tag--sm">TypeScript</span>
+                                <span class="tag tag--sm">React</span>
+                                <span class="tag tag--sm">Tailwind CSS</span>
+                                <span class="tag tag--sm">Vitest</span>
+                                <span class="tag tag--sm">Playwright</span>
+                                <span class="tag tag--sm">Lighthouse CI</span>
+                                <span class="tag tag--sm">GitHub Pages</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://github.com/AllwynThomas/is117004-digital-museum" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://allwynthomas.github.io/is117004-digital-museum/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
                         </div>
-                        <div class="project-card__tags">
-                            <span class="tag tag--sm">TypeScript</span>
-                            <span class="tag tag--sm">Node.js</span>
-                            <span class="tag tag--sm">React</span>
-                            <span class="tag tag--sm">SQLite</span>
-                            <span class="tag tag--sm">WebSockets</span>
-                            <span class="tag tag--sm">Tldraw</span>
-                            <span class="tag tag--sm">GitHub Actions (CI/CD)</span>
-                            <span class="tag tag--sm">AWS (EC2)</span>
-                        </div>
-                        <div class="project-card__links">
-                            <a href="https://github.com/AllwynThomas/covey.town-interactive-whiteboard" target="_blank" rel="noopener noreferrer" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="https://coveytown.duckdns.org/" target="_blank" rel="noopener noreferrer" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                        <p class="project-card__note"><i class="fas fa-info-circle"></i> Live demo may be unavailable — the AWS EC2 instance is spun up on request due to limited free-tier credits.</p>
                     </article>
 
-                    <!-- Project 2: Generative AI Pictionary -->
+                    <!-- Project 2: Covey.Town Interactive Whiteboard -->
+                    <article class="project-card reveal">
+                        <img
+                            src="assets/images/projects/coveytown-whiteboard.png"
+                            alt="Screenshot of the Covey.Town collaborative whiteboard with two users"
+                            class="project-card__screenshot"
+                            width="1200"
+                            height="630"
+                            loading="lazy"
+                        >
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Covey.Town Interactive Whiteboard</h3>
+                            <div class="project-card__body">
+                                <p><strong>Problem:</strong> A 2D virtual meeting platform needed collaborative drawing capabilities for its users.</p>
+                                <p><strong>Solution:</strong> Worked with a team to implement a real-time collaborative whiteboard using Tldraw for the drawing UI, WebSockets for live synchronization across clients, and SQLite for persistent storage. Integrated into the existing Covey.Town codebase.</p>
+                                <p><strong>Result:</strong> Deployed to AWS EC2 — users could collaboratively draw in real time and return later to find their work saved.</p>
+                            </div>
+                            <div class="project-card__tags">
+                                <span class="tag tag--sm">TypeScript</span>
+                                <span class="tag tag--sm">Node.js</span>
+                                <span class="tag tag--sm">React</span>
+                                <span class="tag tag--sm">SQLite</span>
+                                <span class="tag tag--sm">WebSockets</span>
+                                <span class="tag tag--sm">Tldraw</span>
+                                <span class="tag tag--sm">GitHub Actions (CI/CD)</span>
+                                <span class="tag tag--sm">AWS (EC2)</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://github.com/AllwynThomas/covey.town-interactive-whiteboard" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://coveytown.duckdns.org/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                            <p class="project-card__note"><i class="fas fa-info-circle"></i> Live demo may be unavailable — the AWS EC2 instance is spun up on request due to limited free-tier credits.</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Generative AI Pictionary -->
                     <article class="project-card reveal">
                         <img
                             src="assets/images/projects/ai-pictionary.png"
-                            alt="Screenshot of the Generative AI Pictionary game showing a drawing canvas and AI guess panel"
+                            alt="Screenshot of the Generative AI Pictionary game showing the player guessing an image generated by the AI"
                             class="project-card__screenshot"
                             width="1200"
                             height="630"
                             loading="lazy"
                         >
-                        <h3 class="project-card__title">Generative AI Pictionary</h3>
-                        <div class="project-card__body">
-                            <p><strong>Problem:</strong> Build an application that meaningfully leverages generative AI.</p>
-                            <p><strong>Solution:</strong> Created a Pictionary-style drawing and guessing game where a player competes against an AI opponent. Trained CNN models for drawing recognition and GAN models for AI drawing generation using Google's Quick Draw dataset.</p>
-                            <p><strong>Result:</strong> An AI opponent that can both recognize player drawings and generate its own — all powered by custom-trained neural networks.</p>
-                        </div>
-                        <div class="project-card__tags">
-                            <span class="tag tag--sm">Python</span>
-                            <span class="tag tag--sm">Pygame</span>
-                            <span class="tag tag--sm">TensorFlow</span>
-                            <span class="tag tag--sm">Keras</span>
-                        </div>
-                        <div class="project-card__links">
-                            <a href="https://github.com/AllwynThomas/Gen-AI-Pictionary" target="_blank" rel="noopener noreferrer" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Project 3: Jewelry Store E-Commerce -->
-                    <article class="project-card reveal">
-                        <img
-                            src="assets/images/projects/jewelry-store.png"
-                            alt="Screenshot of the Jewelry Store e-commerce site showing a product listing page with JWT-authenticated admin controls"
-                            class="project-card__screenshot"
-                            width="1200"
-                            height="630"
-                            loading="lazy"
-                        >
-                        <h3 class="project-card__title">Jewelry Store E-Commerce</h3>
-                        <div class="project-card__body">
-                            <p><strong>Problem:</strong> Design and build a complete e-commerce platform with authentication and role-based access control.</p>
-                            <p><strong>Solution:</strong> Built a full-stack jewelry store website with JWT authentication, separate user and admin roles, order management workflows, and a MariaDB-backed product catalog.</p>
-                            <p><strong>Result:</strong> A fully functional e-commerce experience with secure authentication, role-based dashboards, and database-driven inventory management.</p>
-                        </div>
-                        <div class="project-card__tags">
-                            <span class="tag tag--sm">HTML</span>
-                            <span class="tag tag--sm">CSS</span>
-                            <span class="tag tag--sm">PHP</span>
-                            <span class="tag tag--sm">JavaScript</span>
-                            <span class="tag tag--sm">MariaDB</span>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Generative AI Pictionary</h3>
+                            <div class="project-card__body">
+                                <p><strong>Problem:</strong> Build an application that meaningfully leverages generative AI.</p>
+                                <p><strong>Solution:</strong> Created a Pictionary-style drawing and guessing game where a player competes against an AI opponent. Trained CNN models for drawing recognition and GAN models for AI drawing generation using Google's Quick Draw dataset.</p>
+                                <p><strong>Result:</strong> An AI opponent that can both recognize player drawings and generate its own — all powered by custom-trained neural networks.</p>
+                            </div>
+                            <div class="project-card__tags">
+                                <span class="tag tag--sm">Python</span>
+                                <span class="tag tag--sm">Pygame</span>
+                                <span class="tag tag--sm">TensorFlow</span>
+                                <span class="tag tag--sm">Keras</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://github.com/AllwynThomas/Gen-AI-Pictionary" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </article>
 
