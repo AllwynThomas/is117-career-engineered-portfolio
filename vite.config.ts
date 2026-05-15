@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/',
+  base: '/is117-career-engineered-portfolio/',
   build: {
     outDir: 'dist',
     emptyOutDir: true,
