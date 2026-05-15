@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | Allwyn Thomas</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .not-found {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-xl);
+      gap: var(--space-md);
+    }
+    .not-found__code {
+      font-size: clamp(5rem, 20vw, 10rem);
+      font-weight: 800;
+      line-height: 1;
+      color: var(--accent);
+      letter-spacing: -0.05em;
+    }
+    .not-found__title {
+      font-size: var(--font-size-2xl);
+      color: var(--text-primary);
+    }
+    .not-found__subtitle {
+      color: var(--text-secondary);
+      max-width: 420px;
+    }
+    .not-found__actions {
+      display: flex;
+      gap: var(--space-sm);
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: var(--space-sm);
+    }
+  </style>
+</head>
+<body>
+  <main class="not-found">
+    <p class="not-found__code">404</p>
+    <h1 class="not-found__title">Page not found</h1>
+    <p class="not-found__subtitle">This URL doesn't exist — but the portfolio does. Head back and take a look.</p>
+    <div class="not-found__actions">
+      <a href="/" class="btn btn--primary"><i class="fas fa-home"></i> Back to Portfolio</a>
+      <a href="https://github.com/AllwynThomas" target="_blank" rel="noopener noreferrer" class="btn btn--outline"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </main>
+</body>
+</html>
